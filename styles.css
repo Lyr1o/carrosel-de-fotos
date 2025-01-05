@@ -120,14 +120,15 @@ video {
 
     .carousel-container {
         max-width: 280px;
+        margin-top: 2rem;
     }
 
     h1 {
-        font-size: 1.6rem; 
+        font-size: 1.8rem; 
     }
 
     p {
-        font-size: 1.2rem; 
+        font-size: 1.4rem; 
     }
 
     video {
