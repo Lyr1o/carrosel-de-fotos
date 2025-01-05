@@ -120,6 +120,7 @@ video {
 
     .carousel-container {
         max-width: 280px;
+        margin-top: 3rem;
     }
 
     h1 {
