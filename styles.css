@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-color: #000A1A; 
+    color: #fff; 
+    text-align: center; 
+    margin-top: 5rem;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 600px; 
+    padding: 2rem;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    border-left: solid 0.5rem white;
+    border-right: solid 0.5rem white;
+    margin: 7rem; 
+    margin-bottom: 1rem;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 0.5rem;
+}
+
+button.next {
+    right: 0.5rem;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tempo {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.contador {
+    padding: 2rem;
+}
+
+
+p {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto; 
+    border-top: 0.2rem solid white;
+    padding-top: 1rem;
+    line-height: 1.6; 
+}
+
+
+.video {
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+video {
+    width: 100%;
+    height: auto; 
+    border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 50%;
+    }
+
+    .carousel-container {
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 1.6rem; 
+    }
+
+    p {
+        font-size: 1.2rem; 
+    }
+
+    video {
+        width: 100%;
+        margin-bottom: 0
+    }
+
+    button {
+        padding: 0.5rem; 
+    }
+}
